@@ -1,0 +1,17 @@
+Depending on the computer
+py
+python3 (Mac users only, no ohter option)
+python 
+
+To install the virtual environment (venv)
+python3 -m pip install virtualenv
+
+To create the venv 
+python3 -m venv venv
+
+we need to be place in the folder that contains the venv
+widnows---> venv\Scripts\activate
+Mac---> source venv/bin/activate
+
+How do you know that youre using a venv?
+you will see this on the termial ---> (venv) kevin@Kevins-Laptop server % 
