@@ -15,3 +15,16 @@ Mac---> source venv/bin/activate
 
 How do you know that youre using a venv?
 you will see this on the termial ---> (venv) kevin@Kevins-Laptop server % 
+
+
+//REACT PROJECT
+to create a react project we need to use the following instruction
+*   npx create-react-app "name of the folder"
+if for some rasint hjis doesnt work
+try:
+npm i -g npx and then npx create-react-app "name of the folder"
+
+/to run the server WE NEED TO BE LOCATED IN THE FOLDER THAT WE JUST CREATED.
+use: npm start
+
+to change directory you need to use -- cd "name of folder"
