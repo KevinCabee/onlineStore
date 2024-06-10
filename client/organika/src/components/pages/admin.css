@@ -1,0 +1,39 @@
+.admin {
+    background-color: aqua;
+}
+
+.admin .admin-product-coupon {
+    display: flex;
+    background-color: bisque;
+    
+}
+
+.admin .admin-product-coupon .coupons {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: baseline;
+}
+
+.admin .admin-product-coupon .coupons input{
+    width: 100%;
+}
+
+.admin .admin-product-coupon .produ {
+    background-color: greenyellow;
+    flex: 2;
+}
+
+.admin .admin-product-coupon .form {
+    border: 1px solid #6a6b6f;
+    border-radius: 6px;
+    background-color: white;
+    padding: 12px 20px;
+    margin: 6px 20px;
+}
+
+.admin .form .button {
+    margin-top: 12px;
+
+}

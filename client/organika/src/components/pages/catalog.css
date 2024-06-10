@@ -1,3 +1,7 @@
 .catalog h1{
     background-color: rgb(168, 178, 174);
 }
+
+.catalog .filters button {
+    margin-right: 6px;
+}

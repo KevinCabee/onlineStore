@@ -1,0 +1,12 @@
+.about{
+    background-color: rgb(133, 213, 168);
+    height: 600px;
+}
+
+.info{
+    background-color: rgb(64, 100, 79);
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px 20px;
+}
