@@ -9,14 +9,16 @@ function QuantityPicker(props){
         let val = quantity - 1
         if (val > 0){
             setQuantity(val);
-            props.onChange();
+            props.onChange(val);
         }
     }
+
+   
 
     function increase(){
         let val = quantity + 1
         setQuantity(val);
-        props.onChange();
+        props.onChange(val);
     }
 
     return(

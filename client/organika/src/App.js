@@ -11,25 +11,28 @@ import About from './components/pages/about';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Admin from './components/pages/admin';
+import GlobalProvider from './context/globalProvider';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
-        <div className="container-fluid">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/catalog" element={<Catalog />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/admin" element={<Admin />} />
-          </Routes>
-        </div>
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <div className="container-fluid">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/catalog" element={<Catalog />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/admin" element={<Admin />} />
+            </Routes>
+          </div>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 
