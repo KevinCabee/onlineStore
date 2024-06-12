@@ -6,3 +6,7 @@
     color: white;
     text-align: center;
 }
+
+.navbar .user{
+    margin-right: 10px;
+}

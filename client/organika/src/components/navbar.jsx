@@ -9,6 +9,17 @@ import DataContext from '../context/dataContext';
 function Navbar() {
 
     const user = useContext(DataContext).user;
+    const cart = useContext(DataContext).cart;
+
+    function getNumOfProds(){
+        let total = 0;
+        for (let i = 0; i < cart.length; i++) {
+            let prod = cart[i];
+            total += prod.quantity;
+        }
+
+        return total;
+    }
 
     return (
         <nav className="navbar navbar-expand-lg ">
@@ -51,10 +62,10 @@ function Navbar() {
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <label className='btn btn-outline-primary'>{user.name}</label>
-                        <button className="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
+                        <label className='btn btn-outline-light user'>{user.name}</label>
+                        <Link className="btn btn-outline-light" to="/cart">
+                            {getNumOfProds()} Cart
+                        </Link>
                     </form>
                 </div>
             </div>

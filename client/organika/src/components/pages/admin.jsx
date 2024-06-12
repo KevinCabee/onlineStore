@@ -7,16 +7,31 @@ function Admin() {
         discount: '',
     });
 
-    function saveCoupon() {
+    const [product, setProduct] = useState({});
+
+    function saveCoupon(e) {
         console.log("Save Coupon", coupon);
+        const value = e.target.value;
+        const name = e.target.name;
+
+        let copy = {...coupon};
+        copy[name] = value;
+        setCoupon(copy);
+
     }
 
     function handleCoupon(e) {
         const value = e.target.value;
         const name = e.target.name;
-        console.log("input changed", value);
-        coupon[name] = value;
+
+        let copy = {...product};
+        copy[name] = value;
+        setProduct(copy);
     }
+
+    // function saveProduct() {
+    //     setAllProducts([...allProducts, product]);
+    // }
 
 
     return (
